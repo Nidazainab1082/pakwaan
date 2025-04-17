@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qalandari Pakwaan Center | Shamsuddin Manu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1 class="transition-heading"><img src="logo.png" alt="" style="height: 140px; width: 360px;">
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#daily-special">Daily Special</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <button id="themeToggle" class="stylish-btn">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+      
+        <div class="hero-content">
+            <h2 class="transition-heading">QALANDARI PAKWAAN CENTER</h2>
+            <p>Owner: Muhammad Shamsuddin</p>
+            <button class="stylish-btn" onclick="openOrderModal()">Order Now</button>
+    
+    </div>
+    
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title transition-heading">Our Signature Dishes</h2>
+            <div class="menu-grid">
+                <div class="menu-item dark-border">
+                    <img src="beef.jpg" alt="Beef Biryani">
+                    <div class="item-info">
+                        <h3>Beef Biryani</h3>
+                        <p>Premium basmati rice with tender beef pieces and special spices</p>
+                        <span class="price">Rs. 300</span>
+                        <button class="stylish-btn" onclick="openOrderModal()">Order Now</button>
+                    </div>
+                </div>
+                <div class="menu-item dark-border">
+                    <img src="chicken.jpg" alt="Chicken Biryani">
+                    <div class="item-info">
+                        <h3>Chicken Biryani</h3>
+                        <p>Fragrant rice with succulent chicken and traditional spices</p>
+                        <span class="price">Rs. 250</span>
+                        <button class="stylish-btn" onclick="openOrderModal()">Order Now</button>
+                    </div>
+                </div>
+                <div class="menu-item dark-border">
+                    <img src="daal.jpg" alt="Daal Chawal">
+                    <div class="item-info">
+                        <h3>Daal Chawal</h3>
+                        <p>Hearty lentil curry served with steamed basmati rice</p>
+                        <span class="price">Rs. 180</span>
+                        <button class="stylish-btn" onclick="openOrderModal()">Order Now</button>
+                    </div>
+                </div>
+                <div class="menu-item dark-border">
+                    <img src="kabab.jpg" alt="Kabab Platter">
+                    <div class="item-info">
+                        <h3>Kabab Platter</h3>
+                        <p>Juicy seekh and chapli kababs with naan and chutney</p>
+                        <span class="price">Rs. 350</span>
+                        <button class="stylish-btn" onclick="openOrderModal()">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="daily-special" class="daily-special">
+        <div class="container">
+            <h2 class="section-title transition-heading">Today's Special</h2>
+            <div class="special-item dark-border">
+                <img src="karhai.jpg" alt="Today's Special">
+                <div class="special-info">
+                    <h3 id="todaysSpecial">Chicken Karahi</h3>
+                    <p id="specialDesc">Slow-cooked chicken in rich tomato gravy with fresh coriander</p>
+                    <span class="price" id="specialPrice">Rs. 320</span>
+                    <button class="stylish-btn" onclick="openOrderModal()">Order Special</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="events-section">
+        <div class="container">
+            <h2 class="section-title transition-heading">Event Catering</h2>
+            <p class="section-subtitle">We cater for weddings, parties, and corporate events</p>
+            <div class="event-gallery">
+                <div class="event-card dark-border">
+                    <img src="wedding.jpg" alt="Wedding Catering">
+                    <h3>Wedding Catering</h3>
+                    <button class="stylish-btn" onclick="openEventModal()">Book Now</button>
+                </div>
+                <div class="event-card dark-border">
+                    <img src="party.jpg" alt="Party Catering">
+                    <h3>Party Catering</h3>
+                    <button class="stylish-btn" onclick="openEventModal()">Book Now</button>
+                </div>
+                <div class="event-card dark-border">
+                    <img src="try.jpg" alt="Corporate Catering">
+                    <h3>Corporate Events</h3>
+                    <button class="stylish-btn" onclick="openEventModal()">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title transition-heading">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info dark-border">
+                    <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                    <p>House No 374, Street No 24<br>
+                    Muhammad Mustafa Colony<br>
+                    Orangi Town, Karachi</p>
+                    
+                    <h3><i class="fas fa-phone"></i> Phone</h3>
+                    <p><a href="tel:03495757752">0349-5757752</a></p>
+                    
+                    <h3><i class="fas fa-clock"></i> Opening Hours</h3>
+                    <p>Monday - Sunday: 11:00 AM - 11:00 PM</p>
+                </div>
+                <div class="contact-map dark-border">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.231153880847!2d67.0283143150016!3d24.844151984071933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33c536cbffa3d%3A0x93d609e8bec9a880!2sOrangi%20Town%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content dark-border">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 class="transition-heading">Place Your Order</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="orderName">Your Name</label>
+                    <input type="text" id="orderName" required>
+                </div>
+                <div class="form-group">
+                    <label for="orderPhone">Phone Number</label>
+                    <input type="tel" id="orderPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="orderItem">Select Item</label>
+                    <select id="orderItem" required>
+                        <option value="">-- Select Dish --</option>
+                        <option value="Beef Biryani">Beef Biryani (Rs. 300)</option>
+                        <option value="Chicken Biryani">Chicken Biryani (Rs. 250)</option>
+                        <option value="Daal Chawal">Daal Chawal (Rs. 180)</option>
+                        <option value="Kabab Platter">Kabab Platter (Rs. 350)</option>
+                        <option id="specialOption" value=""></option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="orderQuantity">Quantity</label>
+                    <input type="number" id="orderQuantity" min="1" value="1" required>
+                </div>
+                <button type="submit" class="stylish-btn">Confirm Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Event Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content dark-border">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 class="transition-heading">Event Booking</h2>
+            <form id="eventForm">
+                <div class="form-group">
+                    <label for="eventName">Your Name</label>
+                    <input type="text" id="eventName" required>
+                </div>
+                <div class="form-group">
+                    <label for="eventPhone">Phone Number</label>
+                    <input type="tel" id="eventPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="eventType">Event Type</label>
+                    <select id="eventType" required>
+                        <option value="">-- Select Event Type --</option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Party">Party</option>
+                        <option value="Corporate">Corporate Event</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="eventDate">Event Date</label>
+                    <input type="date" id="eventDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="eventGuests">Number of Guests</label>
+                    <input type="number" id="eventGuests" min="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="eventNotes">Special Requests</label>
+                    <textarea id="eventNotes"></textarea>
+                </div>
+                <button type="submit" class="stylish-btn">Submit Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3 class="transition-heading">Qalandari Pakwaan Center</h3>
+                    <p>Authentic Pakistani Cuisine</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#daily-special">Daily Special</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Qalandari Pakwaan Center. All Rights Reserved.</p>
+                <p>Owner: Shamsuddin Manu</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
